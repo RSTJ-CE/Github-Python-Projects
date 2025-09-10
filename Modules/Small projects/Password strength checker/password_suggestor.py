@@ -1,0 +1,23 @@
+from pw_strength_check import *
+import secrets
+#look at what is missing from previous input and suggest a password based on it
+
+def suggest_password(password, missing_req):
+    # passwords that passes check will not be using this function
+
+    suggestion = ''
+    for req_matching,num,req,str_name in missing_req:
+        while num != 0: #num acts as counter to fulfil requirement
+            suggestion += secrets.choice(req) #adds a random character from req to suggestion
+            num -= 1
+    random_index = secrets.randbelow(len(password)+1)
+    #inserts password at random position of previous password
+    #.randbelow to ensure no error if user input is empty
+
+    return password[:random_index] + suggestion + password[random_index:]
+    #returns new password
+
+if __name__ == '__main__':
+    #used to check if it returns suggested password
+    password = input('Enter password: ')
+    print(suggest_password(password,missing_requirements(password,requirements())))
