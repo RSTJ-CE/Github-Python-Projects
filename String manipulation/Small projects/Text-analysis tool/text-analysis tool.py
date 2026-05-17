@@ -1,9 +1,3 @@
-# text analysis
-# find most common word ✅
-# find number of vowels and words count ✅
-# find palindrome ✅
-# let a user input word to search for and ability to replace it ✅
-# make sure every sentence starts with capital letter ✅
 def find_vowels(paragraph):
     vowel_count = len([vowel for vowel in paragraph if vowel in 'aeiouAEIOU'])
     return vowel_count
