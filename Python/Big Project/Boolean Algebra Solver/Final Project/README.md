@@ -27,7 +27,7 @@ It applies Boolean algebra theorems, factorisation, and verification to achieve 
 - Not variables are denoted with '!' at the front. !AB!CD means A and C are not variables
 
 ### What's the purpose of sorting?
--  the purpose of sorting the Boolean algebra expression is to make it visually clearer to the user, and to allow the simplification to be easier.
+-  the purpose of sorting the Boolean algebra expression is to make it visually clearer to the user, and to allow the expression to be simplified more easily by the algorithm.
 
 ### What does P & S represent in the truth table?
--  P & S is a way of showing whether the problem and solution are equivalent
+-  P represent problem, while S represents solution. P & S is to show whether the problem and solution are equivalent
