@@ -20,3 +20,14 @@ It applies Boolean algebra theorems, factorisation, and verification to achieve 
 - Unable to handle inputs with brackets
 - Requires specific format of terms spaced with ' + '
 - Accuracy may decrease for more complex problems
+
+### Common questions
+
+Which variables are denoted as 'Not' variables?
+- Not variables are denoted with '!' at the front. !AB!CD means A and C are not variables
+
+What's the purpose of sorting?
+-  the purpose of sorting the Boolean algebra expression is to make it visually clearer to the user, and to allow the simplification to be easier.
+
+What does P & S represent in the truth table?
+-  P & S is a way of showing whether the problem and solution are equivalent
