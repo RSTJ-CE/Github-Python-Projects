@@ -49,6 +49,9 @@ class RedirectWorking: #Class to transfer print output in terminal to widget
         self.widget.insert("end", text) #insert text at the end
         self.widget.see("end") #scroll text widget to the end
 
+    def flush(self):
+        pass
+
 def display_info():
     #delete previous inputs
     ProblemSolutionText.delete(1.0, tk.END)
