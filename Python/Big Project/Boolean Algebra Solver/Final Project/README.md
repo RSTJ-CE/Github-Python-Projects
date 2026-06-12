@@ -1,5 +1,4 @@
-# Project Title
-Boolean Algebra Solver
+# Boolean Algebra Solver
 
 ## Overview
 This is a solver that simplifies a given Boolean algebra expression through recursive rule-based simplification.
