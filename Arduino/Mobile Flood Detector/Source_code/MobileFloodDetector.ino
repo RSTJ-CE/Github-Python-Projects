@@ -34,9 +34,9 @@ unsigned long LastSentData = 0;  // Variable to represent duration since data wa
 
 //Wifi strings
 SoftwareSerial espSerial(12,13); //Pin 12 and 13 act as RX and TX for wifi module.
-String mySSID = "RSTJ";       // WiFi SSID
-String myPWD = "Test5123"; // WiFi Password
-String myAPI = "WF1Y5ZR2IUF5EBJY";   // API Key
+String mySSID = "...";       // WiFi SSID
+String myPWD = "..."; // WiFi Password
+String myAPI = "...";   // API Key
 String myHOST = "api.thingspeak.com"; // API website
 String myPORT = "80"; // 80 is Port used for HTTP
 String WaterLevel_Field = "field1"; // Field 1 for sending water level
