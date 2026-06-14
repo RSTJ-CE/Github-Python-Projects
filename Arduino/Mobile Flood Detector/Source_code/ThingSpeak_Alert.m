@@ -3,10 +3,10 @@ ReadApiKey ='...';
 writeApiKey = '...';
 
 %Set up email
-setpref('Internet','E_mail','alerter.rstj@gmail.com');
+setpref('Internet','E_mail',''); %enter email
 setpref('Internet','SMTP_Server','smtp.gmail.com');
-setpref('Internet','SMTP_Username','alerter.rstj@gmail.com');
-setpref('Internet','SMTP_Password','gxxa tjar ngqp qjym'); 
+setpref('Internet','SMTP_Username','...'); %enter email
+setpref('Internet','SMTP_Password','...'); %enter email app passcode
 
 
 props = java.lang.System.getProperties; %get java system settings
@@ -40,7 +40,7 @@ end
 
 %For drain blockage data
 if isempty(DrainBlockageData)
-    DrainBlockage_value = 0
+    DrainBlockage_value = 0;
 else
     DrainBlockage_value = DrainBlockageData(end);
 end
@@ -65,7 +65,7 @@ end
  %Catch errors so the MATLAB code does not disable a TimeControl if it fails
 if (send_email)
   try
-      sendmail('RaymondSimTJ08.25@ichat.sp.edu.sg', alertSubject, alertBody);
+      sendmail('...', alertSubject, alertBody); %Enter receiver's email
   catch someException
       fprintf("Failed to send email: %s\n", someException.message);
   end
